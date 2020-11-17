@@ -1,0 +1,17 @@
+html, body {
+    font-family: monospace;
+    text-align: center;
+    background: linear-gradient(#e66465, #9198e5);
+    height: 100%;
+}
+form {
+    background-color: pink;
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+}
+label {
+    display:inline-block;
+    font-size: 10pt;
+}

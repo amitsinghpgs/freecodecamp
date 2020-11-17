@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <main id="main">
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      <h1 id="title">Sample Form</h1>
+      <p id="description">Thanks for taking the time to fill out this form</p>
+    </main>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label><br />
+      <input type="text" id="name" name="name" placeholder="Name" required /><br />
+      <label id="email-label" for="email">Email:</label><br />
+      <input type="email" id="email" name="email" placeholder="Email" required /><br />
+      <label id="number-label" for="number">Age:</label><br />
+      <input type="number" id="number" name="number" placeholder="10" min="1" max="1000" /><br />
+      <label id="dropdown-label" for="dropdown">Select Job status</label><br />
+      <select id="dropdown">
+        <option value="Job">Job</option>
+        <option value="Freelancer">Freelancer</option>
+        <option value="Others">Others</option>
+      </select><br>
+      <label>Gender:</label><br>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label><br />
+
+      <label>Please select a language:</label><br>
+      <input type="checkbox" id="python" value="python" />
+      <label for="python"> Python</label><br />
+      <input type="checkbox" id="Javascript" value="Javascript" />
+      <label for="Javascript">Javascript</label><br />
+      <input type="checkbox" id="Other" value="Other" />
+      <label for="Other">Other</label><br />
+      <label for="comment">Enter any comment</label><br />
+      <textarea id="comment" name="comment">Enter text here...</textarea><br />
+      <input type="submit" id="submit" value="Submit here" />
+    </form>
+  </body>
+</html>
