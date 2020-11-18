@@ -1,0 +1,63 @@
+body,
+html {
+  text-align: center;
+  margin: 0px;
+}
+#projects {
+  padding: 50px;
+  height: 400px;
+  background-color: cornflowerblue;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(2, 100px);
+  grid-template-areas:
+    "a1 a2 a3"
+    "b1 b2 b3";
+}
+#Tribute_Page {
+  grid-area: a1;
+}
+#Landing_Page {
+  grid-area: a2;
+}
+#Survey_Form {
+  grid-area: a3;
+}
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  background-color: bisque;
+  top: 0px;
+  height: 50px;
+  width: 100%;
+  font-size: large;
+}
+#welcome-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  height: 100vh;
+  background-color: crimson;
+  margin-top: 100px;
+}
+#profile-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: pink;
+  height: 300px;
+}
+.nav-link {
+  margin: 10px;
+}
+
+@media (max-width: 300px) {
+  #navbar {
+    font-size: small;
+  }
+}
