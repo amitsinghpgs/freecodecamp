@@ -1,0 +1,41 @@
+body,
+html {
+  height: 100%;
+  font-family: monospace;
+}
+header {
+  font-size: large;
+}
+#navbar {
+  position: fixed;
+  min-width: 300px;
+  background-color: darksalmon;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#main-doc {
+  margin-left: 310px;
+  background-color: beige;
+  height: 100%;
+  padding: 10px;
+}
+
+@media (max-width: 992px) {
+  #navbar {
+    margin-left: -300px;
+  }
+  #main-doc {
+    margin-left: 0px;
+  }
+}
+
+#navbar a {
+  font-size: 20px;
+}
+
+#navbar header {
+  font-size: 30px;
+}
