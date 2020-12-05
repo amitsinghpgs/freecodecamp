@@ -1,0 +1,23 @@
+#drum-machine {
+    background-color: cornflowerblue;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+}
+#display {
+    margin-top: 5%;
+    margin-right: 20px;
+    background-color:goldenrod;
+    overflow: hidden;
+    height: 1%;
+    text-align: center;
+}
+#drum-box {
+    margin-left: 20px;
+    background-color: darkgrey;
+}
+.drum-pad {
+    cursor:pointer;
+    margin: 10px;
+    background-color: coral;
+}
