@@ -1,0 +1,107 @@
+.numbers {
+  background-color: lightgray;
+  cursor:pointer;
+}
+
+#mainbox {
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: 100px 100px 100px auto;
+  grid-template-rows: 100px 100px 100px 100px 100px auto;
+  width: 400px;
+  height: 600px;
+  background-color: lightblue;
+  position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  margin: auto;
+  text-align: center;
+}
+.numberbox {
+  background-color: lightcoral;
+  grid-area: 3 / 1 / 7 / 4;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: 100px 100px 100px;
+
+}
+#zero {
+  grid-area: 4 / 1 / 5 / 3;
+}
+#clear {
+  background-color: coral;
+  grid-area: 2 / 1 / 3 / 3;
+  cursor:pointer;
+}
+#display {
+  background-color: lightgray;
+  grid-area: 1 / 1 / 2 / 5;
+}
+#divide {
+  background-color: gray;
+  grid-area: 2 / 3 / 3 / 4;
+  cursor:pointer;
+}
+#multiply {
+  background-color: gray;
+  grid-area: 2 / 4 / 3 / 5;
+  cursor:pointer;
+}
+#subtract {
+  background-color: gray;
+  grid-area: 3 / 4 / 4 / 5;
+  cursor:pointer;
+}
+#add {
+  background-color: gray;
+  grid-area: 4 / 4 / 5 / 5;
+  cursor:pointer;
+}
+#equals {
+  background-color: blueviolet;
+  grid-area: 5 / 4 / 7 / 5;
+  cursor:pointer;
+}
+.App {
+  text-align: center;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
